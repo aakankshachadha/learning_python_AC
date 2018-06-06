@@ -1,0 +1,29 @@
+QUES 1
+>>> print("i am aakanksha")
+i am aakanksha
+QUES2
+>>> print("acad"+"view")
+acadview
+QUES 3
+>>> x=input("enter the value of x")
+enter the value of x10
+>>> y=input("enter the value of y ")
+enter the value of y 20
+>>> z=input("enter the value of z ")
+enter the value of z 30
+>>> print(x,y,z)
+10 20 30
+QUES 4
+>>> print("let's get started")
+let's get started
+QUES 5
+>>> s="acadview"
+>>> course="python"
+>>> fee=5000
+>>> print((' %s'' %s'' %d')%(s,course,fee))
+ acadview python 5000
+QUES 6
+>>> name="Tony Stark"
+>>> salary=100000
+>>> print(('%s'' %d')%(name, salary))
+Tony Stark 100000
