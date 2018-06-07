@@ -1,0 +1,64 @@
+QUES 1
+>>> a=[int(b) for b in input().split()]
+2 5 7 9 10
+>>> a
+[2, 5, 7, 9, 10]
+
+QUES 2
+>>> a=[int(b) for b in input().split()]
+2 5 7 9 10
+>>> a
+[2, 5, 7, 9, 10]
+>>> b=['apple','tesla','facebook','google','microsoft']
+>>> a.extend(b)
+>>> a
+[2, 5, 7, 9, 10, 'apple', 'tesla', 'facebook', 'google', 'microsoft']
+
+QUES 3
+>>> a=[2,3,4,4,5,6,4]
+>>> a.count(2)
+1
+>>> a.count(4)
+3
+
+QUES 4
+>>> list=[99,34,65,12,23,40]
+>>> list.sort()
+>>> list
+[12, 23, 34, 40, 65, 99]
+
+QUES 5
+>>> a=[2,6,9,10,16]
+>>> b=[3,5,7,13,20]
+>>> c=a+b
+>>> c.sort()
+>>> c
+[2, 3, 5, 6, 7, 9, 10, 13, 16, 20]
+
+QUES 6
+STACK IMPLEMENTATION
+>>> list=[3,4,6,7,8]
+>>> list.append(9)
+>>> list
+[3, 4, 6, 7, 8, 9]
+>>> c=list.pop()
+>>> c
+9
+>>> list
+[3, 4, 6, 7, 8]
+>>>
+
+
+QUEUE IMPLEMENTATION
+>>> list=[2,4,7,9,0,4]
+>>> c=list.pop()
+>>> c
+4
+>>> list
+[2, 4, 7, 9, 0]
+>>> d=list.pop(0)
+>>> d
+2
+>>> list
+[4, 7, 9, 0]
+>>>
