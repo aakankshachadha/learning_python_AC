@@ -1,0 +1,19 @@
+1.GIT CONFIGURATION
+ git config --global user.name "username"
+ git config --global user.email "your_email"
+
+2.GIT INITIALISATION
+ git init
+ 
+3.TO INCLUDE ALL THE FILES IN COMMIT
+ git add .
+
+4.TO COMMIT
+ git commit -m"first commit"
+
+5.TO CHECK THE STATUS OF FILES
+ git status
+
+6.TO PUSH FILES TO GITHUB
+ git remote add origin path_of_repo
+ git push origin master 
