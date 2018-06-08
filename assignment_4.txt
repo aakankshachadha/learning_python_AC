@@ -1,0 +1,126 @@
+QUES 1
+>>> t=(2,5,"name",1.3)
+>>> len(t)
+4
+
+
+QUES2>>> t2=(33,44,"me","apple",34,89)
+>>> len(t2)
+6
+
+
+QUES3
+>>> t3=(22,44,55,11,2,9,4,5)
+>>> min(t3)
+2
+>>> max(t3)
+55
+
+
+QUES4
+>>> t4=(2,3,4,5,6)
+>>> pro=t4[0]*t4[1]*t4[2]*t4[3]*t4[4]
+>>> pro
+720
+OR
+>>> t4=(2,3,4,5,6)
+>>> pro=(2*3*4*5*6)
+>>> pro
+720
+
+SETS*****************
+
+QUES 1
+>>> a={int(b) for b in input().split()}
+1 3 4 5 6
+>>> print(a)
+{1, 3, 4, 5, 6}
+
+>>> c={int(d) for d in input().split()}
+5 6 7 8 1
+>>> print(c)
+{1, 5, 6, 7, 8}
+
+DIFFERENCE
+>>> diff=a-c
+>>> print(diff)
+{3, 4}
+
+COMPARE
+>>> a < c
+False
+>>> a >= c
+False
+>>> c<a
+False
+>>> a==c
+False
+>>> a^c
+{3, 4, 7, 8}
+
+INTERSECTION
+>>> m=a.intersection(c)
+>>> print(m)
+{1, 5, 6}
+
+DICTIONARY***************
+QUES 1
+>>> dic={}
+>>> for i in range(10):
+...     key=input()
+...     value=int(input())
+...     dic[key]=value
+...
+anu
+78
+raman
+68
+aman
+90
+renuf
+45
+ravi
+91
+kiran
+76
+ramesh
+88
+isha
+67
+shweta
+56
+jas
+77
+>>> dic
+{'anu': 78, 'raman': 68, 'aman': 90, 'renu': 45, 'ravi': 91, 'kiran': 76, 'ramesh': 88, 'isha': 67, 'shweta': 56, 'jas': 77}
+
+
+QUES 2
+>>> dic
+{'anu': 78, 'raman': 68, 'aman': 90, 'renu': 45, 'ravi': 91, 'kiran': 76, 'ramesh': 88, 'isha': 67, 'shweta': 56, 'jas': 77}
+>>> s = [(k, dic[k]) for k in sorted(dic, key=dic.get)]
+>>> for k,v in s:
+...     k,v
+...
+('renu', 45)
+('shweta', 56)
+('isha', 67)
+('raman', 68)
+('kiran', 76)
+('jas', 77)
+('anu', 78)
+('ramesh', 88)
+('aman', 90)
+('ravi', 91)
+
+QUES 3
+>>> a='mississippi'
+>>> k=set(a)
+>>> k
+{'m', 'p', 's', 'i'}
+>>> m=dict.fromkeys(k)
+>>> m
+{'m': None, 'p': None, 's': None, 'i': None}
+>>> m.update(m=a.count('m'),p=a.count('p'),s=a.count('s'),i=a.count('i'))
+>>> m
+{'m': 1, 'p': 2, 's': 4, 'i': 4}
