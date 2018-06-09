@@ -1,0 +1,85 @@
+QUES 1 LEAP YEAR OR  NOT
+>>> a=int(input("enter the year you wanna check"))
+enter the year you wanna check2000
+>>> if a%4==0:
+...     if a%100==0:
+...         if a%400==0:
+...             print(a,' is leap year')
+...         else:
+...             print(a,'is not leap year')
+...     else:
+...         print(a,'is leap year')
+... else:
+...     print(a,'is not leap year')
+...
+2000  is leap year
+
+
+QUES 2 SQUARE OR RECTANGLE
+>>> l=int(input('enter the length :'))
+enter the length :3
+>>> b=int(input('enter the breadth :'))
+enter the breadth :4
+>>> if l==b:
+...     print("It is a square ")
+... else:
+...     print("It is a rectangle")
+...
+It is a rectangle
+
+QUES 3 AGE OF THREE PERSONS
+>>> a=int(input('enter the age of first person '))
+enter the age of first person 34
+>>> b=int(input('enter the age of second person '))
+enter the age of second person 44
+>>> c=int(input('enter the age of third person '))
+enter the age of third person 23
+>>> if a>b and a>c:
+...     print("first person with age",a,"is oldest")
+... elif b>a and b>c:
+...     print("second person with age",b,"is oldest")
+... else:
+...     print("third person with age",c,"is oldest")
+...
+second person with age 44 is oldest
+>>> if a<b and a<c:
+...     print("first person with age",a,"is youngest")
+... elif b<a and b<c:
+...     print("second person with age",b,"is youngest")
+... else:
+...     print("third person with age",c,"is youngest")
+...
+third person with age 23 is youngest
+
+QUES 4 PRIZE
+>>> p=int(input("enter the points upto 200:"))
+enter the points upto 200:59
+>>> if p>=1 and p<=50:
+...     print("Sorry!no prize this time")
+... elif p>=51 and p<=150:
+...     print("Congratulations!You won Wooden Dog")
+... elif p>=151 and p<=180:
+...     print("Congratulations!You won a Book")
+... else:
+...     print("Congratulations!You won Chocolates")
+...
+Congratulations!You won Wooden Dog
+ 
+QUES 5 DISCOUNT
+>>> a=int(input("enter the quantity purchased :"))
+enter the quantity purchased :140
+>>> total=a*100
+>>> total
+14000
+>>> dis=10/100*total
+>>> dis
+1400.0
+>>> price=total-dis
+>>> price
+12600.0
+>>> if total>1000:
+...     print("user has to pay",price)
+... else:
+...     print("no discount offered,user has to pay",total)
+...
+user has to pay 12600.0
