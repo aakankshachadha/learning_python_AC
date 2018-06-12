@@ -1,0 +1,143 @@
+QUES 1
+>>> n=[int(input('enter value:'))for i in range(10)]
+enter value:23
+enter value:32
+enter value:11
+enter value:22
+enter value:44
+enter value:55
+enter value:66
+enter value:77
+enter value:22
+enter value:33
+>>> print(n)
+[23, 32, 11, 22, 44, 55, 66, 77, 22, 33]
+>>> len(n)
+10
+
+QUES 2
+>>> i=0
+>>> while(i<1):
+...     print(i)
+
+
+QUES 3
+>>> n=[int(input('enter element:')) for i in range(10)]
+enter element:2
+enter element:3
+enter element:4
+enter element:5
+enter element:6
+enter element:7
+enter element:8
+enter element:9
+enter element:1
+enter element:10
+>>> n
+[2, 3, 4, 5, 6, 7, 8, 9, 1, 10]
+>>> m=len(n)
+>>> m
+10
+>>> p=[]
+>>> for i in range(m):
+...     p.append(n[i]*n[i])
+...
+>>> print(p)
+[4, 9, 16, 25, 36, 49, 64, 81, 1, 100]
+>>>
+
+QUES 4
+>>> l=[3,4,'m',8.3,'n',8,'f',4.3,2.1]
+>>> m=[]
+>>> n=[]
+>>> o=[]
+>>> for i in range(len(l)):
+...     if type(l[i])==int:
+...         m.append(l[i])
+...     elif type(l[i])==str:
+...         n.append(l[i])
+...     else:
+...         o.append(l[i])
+...
+>>> print(n)
+['m', 'n', 'f']
+>>> print(o)
+[8.3, 4.3, 2.1]
+>>> print(m)
+[3, 4, 8]
+
+
+QUES 5
+>>> m=[]
+>>> n=[]
+>>> for i in range(1,101):
+...     if i%2==0:
+...         m.append(i)
+...     else:
+...         n.append(i)
+...
+>>> print('list of even no. is',m)
+list of even no. is [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100]
+>>> print('list of odd no. is',n)
+list of odd no. is [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51, 53, 55, 57, 59, 61, 63, 65, 67, 69, 71, 73, 75, 77, 79, 81, 83, 85, 87, 89, 91, 93, 95, 97, 99]
+>>>
+
+
+QUES 6
+>>> p='*'
+>>> for i in range(1,5):
+...     print(p*i)
+...
+*
+**
+***
+****
+
+
+QUES 7
+>>> d={}
+>>> for i in range(6):
+...     key=input()
+...     value=input()
+...     d[key]=value
+...
+1
+apple
+2
+orange
+3
+litchi
+4
+mango
+5
+banana
+6
+guava
+>>> for x,y in d.items():
+...     print(x+"->"+y)
+...
+1->apple
+2->orange
+3->litchi
+4->mango
+5->banana
+6->guava
+
+QUES 8
+>>> l=[int(input("enter the element:")) for i in range(6)]
+enter the element:2
+enter the element:3
+enter the element:4
+enter the element:5
+enter the element:6
+enter the element:7
+>>> m=len(l)
+>>> a=int(input("enter the element to be found in the list"))
+enter the element to be found in the list6
+>>> for i in range(m):
+...     if l[i]==a:
+...         l.remove(l[i])
+...         break
+...
+>>> l
+[2, 3, 4, 5, 7]
