@@ -1,0 +1,77 @@
+
+QUES 1
+>>> from math import pi
+>>> def area():
+...     r=float(input('enter the radius of circle:'))
+...     area=pi*r*r
+...     print('Area of circle is:',area)
+...
+>>> area()
+enter the radius of circle:4
+Area of circle is: 50.26548245743669
+
+QUES 2
+>>> def perfect_no(a):
+...     sum=0
+...     for x in range(1,a):
+...         if a%x==0:
+...             sum=sum+x
+...     if sum==a:
+...         print(a,'is a pefect no')
+...
+>>> perfect_no(6)
+6 is a pefect no
+>>> for i in range(1,1001):
+...     perfect_no(i)
+...
+6 is a pefect no
+28 is a pefect no
+496 is a pefect no
+
+QUES 3
+>>> def table(a,n=1):
+...     if n==11:
+...         return
+...     else:
+...         print(a,"*",n,"=",a*n)
+...         table(a,n=n+1)
+...
+>>> table(12)
+12 * 1 = 12
+12 * 2 = 24
+12 * 3 = 36
+12 * 4 = 48
+12 * 5 = 60
+12 * 6 = 72
+12 * 7 = 84
+12 * 8 = 96
+12 * 9 = 108
+12 * 10 = 120
+
+QUES 4
+>>> b=int(input('enter the base:'))
+enter the base:3
+>>> p=int(input('enter the power:'))
+enter the power:3
+>>> def power(a,c):
+...     if c==1:
+...         return a
+...     else:
+...         return(a*power(a,c-1))
+...
+>>> print('result is:',power(b,p))
+result is: 27
+
+QUES 5
+>>> def fac(n):
+...     if n==1:
+...         return 1
+...     else:
+...         return(n*fac(n-1))
+...
+>>> num=int(input('enter no. of which factorial is to be found'))
+enter no. of which factorial is to be found6
+>>> fact=fac(num)
+>>> dic={num:fact}
+>>> dic
+{6: 720}
