@@ -1,0 +1,78 @@
+QUES 1
+We represent time in a way that’s easy for us to understand. However, Python stores it in tuples. These python tuples are made of nine numbers.
+
+Index	Field	         Domain of Values
+0	Year (4 digits)	 Ex.- 1995
+1	Month	         1 to 12
+2	Day	         1 to 31
+3	Hour	         0 to 23
+4	Minute	         0 to 59
+5	Second	         0 to 61 (60/61 are leap seconds)
+6	Day of Week	 0 to 6 (Monday to Sunday)
+7	Day of Year	 1 to 366 (Julian day)
+8	DST	         -1,0,1
+
+QUES 2
+>>> import datetime
+>>> now=datetime.datetime.now()
+>>> print(str(now))
+2018-06-14 16:05:39.640692
+
+
+QUES 3
+>>> import datetime
+>>> my_date=datetime.datetime.now()
+>>> my_date.strftime("%b")
+'Jun'
+OR
+>>> import datetime
+>>> now=datetime.datetime.now()
+>>> print('month:',now.month)
+month: 6
+
+QUES 4
+>>> from datetime import date
+>>> import calendar
+>>> mydate=date.today()
+>>> calendar.day_name[mydate.weekday()]
+'Thursday'
+
+QUES 5
+>>> import datetime
+>>> now=datetime.datetime.now()
+>>> print('current date:',now.day)
+current date: 14
+>>>
+
+QUES 6
+>>> import time
+>>> t=time.localtime()
+>>> print('time.asctime(t):',time.asctime(t))
+time.asctime(t): Thu Jun 14 15:43:45 2018
+>>>
+
+QUES 7
+>>> import math
+>>> a=int(input('enter no of which factorial is to be found:'))
+enter no of which factorial is to be found:7
+>>> print('factorial is:',math.factorial(a))
+factorial is: 5040
+
+
+QUES 8
+>>> import math
+>>> a=int(input('enter first no:'))
+enter first no:15
+>>> b=int(input('enter second no:'))
+enter second no:30
+>>> print('gcd is:',math.gcd(a,b))
+gcd is: 15
+
+QUES 9
+>>> import os
+>>> cwd=os.getcwd()
+>>> print(cwd)
+C:\Users\lenovo\AppData\Local\Programs\Python\Python36-32
+
+>>> print(os.environ)
+environ({'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\lenovo\\AppData\\Roaming', 'COMMONPROGRAMFILES': 'C:\\Program Files (x86)\\Common Files', 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files', 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files', 'COMPUTERNAME': 'DESKTOP-658PUAJ', 'COMSPEC': 'C:\\Windows\\system32\\cmd.exe', 'FPS_BROWSER_APP_PROFILE_STRING': 'Internet Explorer', 'FPS_BROWSER_USER_PROFILE_STRING': 'Default', 'HOMEDRIVE': 'C:', 'HOMEPATH': '\\Users\\lenovo', 'LOCALAPPDATA': 'C:\\Users\\lenovo\\AppData\\Local', 'LOGONSERVER': '\\\\DESKTOP-658PUAJ', 'NUMBER_OF_PROCESSORS': '4', 'OS': 'Windows_NT', 'PATH': 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\', 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC', 'PROCESSOR_ARCHITECTURE': 'x86', 'PROCESSOR_ARCHITEW6432': 'AMD64', 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel', 'PROCESSOR_LEVEL': '6', 'PROCESSOR_REVISION': '4e03', 'PROGRAMDATA': 'C:\\ProgramData', 'PROGRAMFILES': 'C:\\Program Files (x86)', 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)', 'PROGRAMW6432': 'C:\\Program Files', 'PSMODULEPATH': 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\', 'PUBLIC': 'C:\\Users\\Public', 'SESSIONNAME': 'Console', 'SYSTEMDRIVE': 'C:', 'SYSTEMROOT': 'C:\\Windows', 'TEMP': 'C:\\Users\\lenovo\\AppData\\Local\\Temp', 'TMP': 'C:\\Users\\lenovo\\AppData\\Local\\Temp', 'USERDOMAIN': 'DESKTOP-658PUAJ', 'USERDOMAIN_ROAMINGPROFILE': 'DESKTOP-658PUAJ', 'USERNAME': 'lenovo', 'USERPROFILE': 'C:\\Users\\lenovo', 'WINDIR': 'C:\\Windows'})
