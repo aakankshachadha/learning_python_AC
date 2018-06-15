@@ -1,0 +1,101 @@
+QUES 1
+>>> class circle():
+...     def __init__(self,r):
+...         self.radius=r
+...     def get_area(self):
+...         return self.radius**2*3.14
+...     def get_circumference(self):
+...         return 2*self.radius*3.14
+...
+>>> circle1=circle(4)
+>>> print(circle1.get_area())
+50.24
+>>> print(circle1.get_circumference())
+25.12
+>>>
+
+QUES 2
+>>> class student():
+...     def __init__(self,n,ro):
+...         self.name=n
+...         self.roll_no=ro
+...     def display(self):
+...         print('name is:',self.name)
+...         print('roll no. is:',self.roll_no)
+...
+>>> ob1=student('aakanksha',11234)
+>>> ob1.display()
+name is: aakanksha
+roll no. is: 11234
+
+QUES 3
+>>> class temperature():
+...      def convertFahrenheit(self,c):
+...          self.ca=c
+...          print('temp in fahrenheit is:',(self.ca*9/5)+32)
+...      def convertCelsius(self,f):
+...          self.fa=f
+...          print('temp in celsius is:',(self.ca-32)*5/9)
+...
+>>> ob1=temperature()
+>>> ob1.convertFahrenheit(23)
+temp in fahrenheit is: 73.4
+>>> ob1.convertCelsius(65)
+temp in celsius is: -5.0
+
+QUES 4
+>>> class MovieDetails():
+...      def __init__(self,n,a,y,r):
+...          self.name=n
+...          self.artist=a
+...          self.year=y
+...          self.ratings=r
+...      def display(self):
+...          print('name of movie is:',self.name)
+...          print('artist of movie is:',self.artist)
+...          print('release year of movie is:',self.year)
+...          print('ratings of movie is:',self.ratings)
+...      def update(self,na,ar,ye,ra):
+...          self.name1=na
+...          self.artist1=ar
+...          self.year1=ye
+...          self.ratings1=ra
+...          print('AFTER UPDATION:')
+...          print('name of movie is:',self.name1)
+...          print('artist of movie is:',self.artist1)
+...          print('release year of movie is:',self.year1)
+...          print('ratings of movie is:',self.ratings1)
+...
+>>> ob1=MovieDetails('Titanic','Leonardo DiCaprio',1997,4.5)
+>>> ob1.display()
+name of movie is: Titanic
+artist of movie is: Leonardo DiCaprio
+release year of movie is: 1997
+ratings of movie is: 4.5
+>>> ob1.update('The Ring','Daveigh Chase',2002,4.3)
+AFTER UPDATION:
+name of movie is: The Ring
+artist of movie is: Daveigh Chase
+release year of movie is: 2002
+ratings of movie is: 4.3
+
+QUES 5
+>>> class Expenditure():
+...     def __init__(self,e,s):
+...         self.ex=e
+...         self.sa=s
+...     def exp(self):
+...         print("expenditure is:",self.ex)
+...         print("savings are:",self.sa)
+...     def total_salary(self):
+...         t=self.ex+self.sa
+...     def display(self):
+...         print("total salary is:",self.ex+self.sa)
+...
+>>> ob1=Expenditure(70000,20000)
+>>> ob1.exp()
+expenditure is: 70000
+savings are: 20000
+>>> ob1.total_salary()
+>>> ob1.display()
+total salary is: 90000
