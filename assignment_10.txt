@@ -1,0 +1,142 @@
+QUES 1
+class Animal:
+    """
+    this is base class named Animal which contains a method animal_attribute. 
+    """
+    def animal_attribute(self):
+        """
+        method named animal_attribte.
+        :return: 
+        prints two statements.
+        """
+        print('animal is eating')
+        print('animal sleeps')
+
+
+class Tiger(Animal):
+    """
+    derieved class Tiger which inherits Animal.object of this class is ob.
+    """
+    def tiger_attribute(self):
+        """
+        method named tiger_attribute
+        :return: 
+        prints a statement
+        """
+        print('tiger roars')
+
+
+ob = Tiger()
+ob.animal_attribute()
+ob.tiger_attribute()
+
+OUTPUT
+animal is eating
+animal sleeps
+tiger roars
+
+QUES 2
+class A:
+    def f(self):
+        return self.g()
+
+    def g(self):
+        return 'A'
+
+class B(A):
+    def g(self):
+        return 'B'
+
+a = A()
+b = B()
+print(a.f(), b.f())
+print(a.g(), b.g())
+
+OUTPUT
+A B
+A B
+QUES 3
+class cop:
+    def __init__(self,n,a,w,e,d):
+        self.na=n
+        self.ag=a
+        self.wo=w
+        self.ex=e
+        self.de=d
+        
+    def add(self):
+        print('add details')
+        
+    def display(self):
+        print('name of cop is:',self.na)
+        print('age of cop is:',self.ag)
+        print('work of cop is:',self.wo)
+        print('experience of cop is:',self.ex)
+        print('designation of cop is:',self.de)
+    
+    def update(self,nm,age,work,exp,des):
+        self.na1=nm
+        self.ag1=age
+        self.wo1=work
+        self.ex1=exp
+        self.de1=des
+        print('AFTER UPDATION*********')
+        print('name of cop is:',self.na1)
+        print('age of cop is:',self.ag1)
+        print('work of cop is:',self.wo1)
+        print('experience of cop is:',self.ex1)
+        print('designation of cop is:',self.de1) 
+class mission(cop):
+    def add_mission_details(self):
+        print('MISSION DETAILS')
+ob=mission('M1',45,'secretmission','8yrs','senior cop')
+ob.add_mission_details()
+ob.add()
+ob.display()
+ob.update('M2',34,'missions','5yrs','junior cop')
+
+OUTPUT
+MISSION DETAILS
+add details
+name of cop is: M1
+age of cop is: 45
+work of cop is: secretmission
+experience of cop is: 8yrs
+designation of cop is: senior cop
+AFTER UPDATION*********
+name of cop is: M2
+age of cop is: 34
+work of cop is: missions
+experience of cop is: 5yrs
+designation of cop is: junior cop
+
+ 
+QUES 4
+class shape:
+
+    def __init__(self,l,b):
+        self.le=l
+        self.br=b
+        
+    def area(self):
+        print(self.le*self.br)
+        
+class square(shape):
+    def sq(self):
+        print('area of square is:')
+        
+class rectangle(square):
+    def re(self):
+        print('area of rectangle is:')       
+rec=rectangle(4,5)
+sqr=square(4,4)
+rec.re()
+rec.area()
+sqr.sq()
+sqr.area()
+
+OUTPUT
+area of rectangle is:
+20
+area of square is:
+16
