@@ -1,9 +1,0 @@
-QUES 1
-In computer systems, an access token contains the security credentials for a login session and identifies the user, 
-the user's groups, the user's privileges, and, in some cases, a particular application.
-    An access token is an object encapsulating the security identity of a process or thread.[1] A token is used to make
-security decisions and to store tamper-proof information about some system entity. While a token is generally used to 
-represent only security information, it is capable of holding additional free-form data that can be attached while the
-token is being created. Tokens can be duplicated without special privilege, for example to create a new token with 
-lower levels of access rights to restrict the access of a launched application. An access token is used by Windows when 
-a process or thread tries to interact with objects that have security descriptors (securable objects).
